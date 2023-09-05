@@ -39,6 +39,9 @@ The systematic methodology followed includes:
 - Feature Engineering: Extracting reward tiers, campaign duration, text vectors from raw features
 - Feature Selection: Identifying predictive subset of features using decision trees
 
+<p align="center">
+  <img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/selected_features.PNG?raw=true"/>
+</p>
   ![selected_features](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/selected_features.PNG?raw=true)
 - Preprocessing: Label encoding, standardization, train-test split
   
