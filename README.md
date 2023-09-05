@@ -1,5 +1,7 @@
 # Kickstarter Campaign Success Prediction
 
+- [Presentation Desk](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/CMPE257_Project_Presentation.pdf)
+
 ## Project Overview
 This project focuses on developing a machine learning model to predict the likelihood of success for Kickstarter campaigns based on data available at launch. The motivation stems from enabling project creators to understand key success factors early on and optimize their project plans. Additionally, the model can aid backers in identifying promising campaigns to support.
 
