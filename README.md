@@ -1,4 +1,5 @@
 # Kickstarter Campaign Success Prediction
+<p align="center"><img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/wordcloud_auto_x2.jpg?raw=true"/></p>
 
 - [Presentation Desk](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/CMPE257_Project_Presentation.pdf)
 
@@ -38,75 +39,81 @@ The systematic methodology followed includes:
 - Exploratory Analysis: Univariate distribution, correlations, clustering
 - Feature Engineering: Extracting reward tiers, campaign duration, text vectors from raw features
 - Feature Selection: Identifying predictive subset of features using decision trees
-
+  
 <p align="center">
   <img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/selected_features.PNG?raw=true"/>
 </p>
-  ![selected_features](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/selected_features.PNG?raw=true)
 - Preprocessing: Label encoding, standardization, train-test split
-  
-  ![data_preprocess_flowchart](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/data_preprocess_flowchart.png?raw=true)
+
+<p align="center"><img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/data_preprocess_flowchart.png?raw=true"/></p>
 - Modelling: Training Logistic Regression, SVM, Random Forest, XGBoost models
 - Tuning and Ensembling: Optimizing hyperparameters through grid search, model stacking (voter classifier)
 - Evaluation: Comparing model performance using evaluation metrics with models trained on different data sample stratifies (SMOTE, ADASYN)
 
-  ![main_flowchart](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/main_flowchart.png?raw=true)
+<p align="center"><img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/main_flowchart.png?raw=true"/></p>
 
 Key techniques employed:
 - Supervised ML models: Regression, SVM, Ensembles (Random Forests, XGBoost, Bagging)
 - Oversampling with SMOTE to handle class imbalance
 - Dimensionality reduction using PCA for feature importance
 
-  ![pca](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/pca.png?raw=true)
+<p align="center"><img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/pca.png?raw=true"/></p>
+
 - Visualization for insights: histograms, heatmaps, scatter plots, word cloud
 
 ## Key Findings and Results
 The analysis yielded significant insights into Kickstarter's success factors:
 - The Success Rate depends highly on the founding team.
 
-  ![Proj_creator_success](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/num_proj_vs_successful_proj.png?raw=true)
+<p align="center"><img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/num_proj_vs_successful_proj.png?raw=true"/></p>
+
 - Certain category has a high success rate then others
 
-  ![succ_category_relation](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/success_rate_by_category.png?raw=true)
-- Increase in funding doesn't always mean higher success rate for early stage startups
+<p align="center"><img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/success_rate_by_category.png?raw=true"/></p>
+  
+- Increase in funding doesn't always mean higher success rate for early-stage startups
 
-  ![temp_funding_successrate](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/temporal_trends_funding_successrate.png?raw=true)
+<p align="center"><img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/temporal_trends_funding_successrate.png?raw=true"/></p>
+  
 - Top 3 categories having 80% pledge money allocation
 
-  ![top_3](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/top_4_category_80pr_pledge.png?raw=true)
+<p align="center"><img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/top_4_category_80pr_pledge.png?raw=true"/></p>
+  
 - Funds Received by each founder and team
 
-  ![top_funding_each_creator](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/top_funding_each_creator.png?raw=true)
-- Country GDP has a high correlation with capital allocation in early stage startup
+<p align="center"><img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/top_funding_each_creator.png?raw=true"/></p>
+  
+- Country GDP has a high correlation with capital allocation in early-stage startup
 
-  ![total_fund_and_GDP_for_2015](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/total_fund_and_GDP_for_2015.png?raw=true)
-- GDP growth of a country given a boost in funding for an early stage startup (Higher GDP results in increased funding, but trends shifted post-2015)
+<p align="center"><img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/total_fund_and_GDP_for_2015.png?raw=true"/></p>
+  
+- GDP growth of a country given a boost in funding for an early-stage startup (Higher GDP results in increased funding, but trends shifted post-2015)
 
-  ![total_fund_and_GDP_in_USA](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/total_fund_and_GDP_in_USA.png?raw=true)
+<p align="center"><img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/total_fund_and_GDP_in_USA.png?raw=true"/></p>
+  
 - The most favorite categories for investors
 
-  ![total_usd_pledged_per_category](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/total_usd_pledged_per_category.png?raw=true)
+<p align="center"><img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/total_usd_pledged_per_category.png?raw=true"/></p>
+  
 - Increase in **App-Related** projects, beginning in 2013. This aligns with **the growing popularity of smartphones and mobile technology** story.
 
-  ![trend_app_project](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/trend_app_project.png?raw=true)
+<p align="center"><img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/trend_app_project.png?raw=true"/></p>
 
 ## Result Comparision
 Base Classifier vs Hyper parameter tuned model (no oversampling)
 
-  ![base_ft](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/base_ft.PNG?raw=true)
-
+<p align="center"><img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/base_ft.PNG?raw=true"/></p>
 
 Voting Classifier (Base & Fine Tuned models) (no oversampling)
 
-  ![voter_class](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/voter_class.PNG?raw=true)
-
+<p align="center"><img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/voter_class.PNG?raw=true"/></p>
 
 Synthetic Minority Oversampling Technique (Base & Fine Tuned models)
 
-  ![smote](https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/smote.PNG?raw=true)
+<p align="center"><img src="https://github.com/darshanvjani/Kickstarter-Campaigns-Analysis/blob/main/Data%20Visualization%20Images/smote.PNG?raw=true"/></p>
 
 
-The optimized XGBoost model obtained the best performance:
+## The optimized XGBoost model obtained the best performance:
 - Accuracy: **98.35%**
 - Precision: **98.89%**
 - Recall: **98.32%**
@@ -122,4 +129,4 @@ Some actionable recommendations based on findings:
 - Promote aggressively in first week to gain early traction
 - Consider economic climate when estimating funding potential
 
-There are several avenues for future work, such as incorporating social media data, and longitudinal trends, and incorporation of policy changes over the years. Overall, this project provides data-driven guidance for key stakeholders in crowdfunding campaigns.
+There are several avenues for future work, such as incorporating social media data, longitudinal trends, and incorporation of policy changes over the years. Overall, this project provides data-driven guidance for key stakeholders in crowdfunding campaigns.
